@@ -14,3 +14,4 @@ It currently includes the following lists:
 
 
 Made with html/css/cssgrid.
+Live version is avaialble here: <https://pjstackdev.github.io/awesome-html-launchers/>
