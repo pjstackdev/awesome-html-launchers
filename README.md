@@ -13,3 +13,5 @@ It currently includes the following lists:
 * [assistant.jobsearch.eu](./assistant.jobsearch.eu.html)
 
 Made with html/css/cssgrid.
+
+Live version is avaialble here: <https://pjstackdev.github.io/awesome-html-launchers/>
