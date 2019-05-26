@@ -1,0 +1,253 @@
+<!doctype html>
+<html>
+	<head>
+	 <meta name="description" http-equiv="content-type" content="text/php; charset=utf-8" />
+	
+	<!--<title>my first html document</title>-->
+	<title>assistant.jobsearch</title>
+	
+	
+	<link rel="icon" href="/favicon.png" sizes="16x16" type="image/png">
+	<style>
+		
+
+
+		body{
+			/*
+			height:100%;
+			width:100%;
+			*/
+			background-color: #f2f0f0ff;
+			font-family: arial;
+			font-size: 12pt;
+		}
+
+		p{			
+			text-align: justify;
+		}
+
+		.innerdiv{
+			position:relative;
+			top:15%;
+			width:60%;
+			margin-left:auto;
+			margin-right:auto;
+			height: auto;
+			background-color: #e3e3e3ff;
+			font-family: arial;
+			padding: 10pt;
+			margin-bottom: 15pt;
+
+		}
+		
+		.card_container{
+			display: grid;
+			/*						
+			grid-template-columns: 40px 50px auto 50px 40px;
+			grid-template-rows: 25% 100px auto;
+			grid-template-columns: 1fr 1fr;
+			grid-template-columns: repeat(4, 24%); 
+			The fr unit removes the need for math, when used with grid-gap: 10px; / fractional unit,
+			grid-template-columns: repeat(4, 1fr);
+			*/
+			grid-template-columns: repeat(8, 1fr);
+			grid-template-rows: repeat(2, auto);
+			justify-content: space-between;
+			align-content: space-evenly;
+			align-items: stretch;  /*height fill*/
+			row-gap: 5px;
+			grid-gap: 10px;
+			
+		}
+
+		@media (max-width: 1400px) {
+		/*small screen params*/
+		.card_container {
+			/*
+			grid-template-columns: repeat(12, 1fr);
+			*/
+			grid-template-columns: repeat(4, 1fr);
+		  }
+		}		
+
+		@media (max-width: 900px) {
+		/*small screen params*/
+		.card_container {
+			/*
+			grid-template-columns: repeat(12, 1fr);
+			*/
+			grid-template-columns: 1fr 1fr;
+		  }
+		}		
+		
+		@media (max-width: 500px) {
+		/*small screen params*/
+		.card_container {
+			/*
+			grid-template-columns: repeat(12, 1fr);
+			*/
+			grid-template-columns: 1fr;
+		  }
+		}
+		
+
+		
+		.card{
+			/*
+			text-aligh: justify-center;
+			text-align-last: center;
+			align-content:flex-start;
+			display: flex;
+			display: inline-block;
+			align-items:center;
+			 Your text needs some kind of container (div, span, p,...) 
+						*/
+			display:flex;
+			height: auto;
+			text-align:center;
+			align-items:center;
+			justify-content: center;
+			background-color: #ffbf2dff;
+			padding: 10pt;  
+		}
+		.button {
+			/*
+			font: bold 11px Arial;
+			border-top: 1px solid #CCCCCC;
+			border-right: 1px solid #333333;
+			border-bottom: 1px solid #333333;
+			border-left: 1px solid #CCCCCC;
+			background-color: #CCCCCC;
+			color: black;
+			padding: 2px 2px 2px 2px;
+			display: inline-block;
+			font-size: 12px;
+			*/
+			display: inline-flex;
+			font: Arial;
+			color: white;
+			background-color: #008CBA;
+			text-decoration: none;
+			padding: 3px;
+			margin-top: 10px;
+			border:none;
+			text-align: center;
+			height:3.5em;
+			align-items:center;
+			justify-content: center;
+			vertical-align: middle;
+			width: 100%
+		}	
+	</style>
+	</head>
+	<body>
+	
+	<div class="innerdiv" id="a">
+		<h1>assistant.jobsearch</h1>
+		Last updated: 16:03 5/17/2019
+	</div>
+
+		<div class="innerdiv" id="a">
+				<h2>NOR : linkedin.com</h2>
+				<div class="card_container">
+					<div class="card"> <div class="card_cont">Try this: <a class="button" target="blank" href="https://no.linkedin.com/jobs/search?keywords=back end developer">back end developer </a></div></div>
+					<div class="card"> <div class="card_cont">Try this: <a class="button" target="blank" href="https://no.linkedin.com/jobs/search?keywords=big data analyst">big data analyst </a></div></div>
+					<div class="card"> <div class="card_cont">Try this: <a class="button" target="blank" href="https://no.linkedin.com/jobs/search?keywords=big data data scientist">big data data scientist</a></div></div>
+					<div class="card"> <div class="card_cont">Try this: <a class="button" target="blank" href="https://no.linkedin.com/jobs/search?keywords=big data developer">big data developer </a></div></div>
+					<div class="card"> <div class="card_cont">Try this: <a class="button" target="blank" href="https://no.linkedin.com/jobs/search?keywords=data data scientist">data data scientist</a></div></div>
+					<div class="card"> <div class="card_cont">Try this: <a class="button" target="blank" href="https://no.linkedin.com/jobs/search?keywords=data developer">data developer </a></div></div>
+					<div class="card"> <div class="card_cont">Try this: <a class="button" target="blank" href="https://no.linkedin.com/jobs/search?keywords=data engineer">data engineer</a></div></div>
+					<div class="card"> <div class="card_cont">Try this: <a class="button" target="blank" href="https://no.linkedin.com/jobs/search?keywords=database developer">database developer </a></div></div>
+					<div class="card"> <div class="card_cont">Try this: <a class="button" target="blank" href="https://no.linkedin.com/jobs/search?keywords=database engineer">database engineer</a></div></div>
+					<div class="card"> <div class="card_cont">Try this: <a class="button" target="blank" href="https://no.linkedin.com/jobs/search?keywords=data scientist">data scientist</a></div></div>
+					<div class="card"> <div class="card_cont">Try this: <a class="button" target="blank" href="https://no.linkedin.com/jobs/search?keywords=full-stack developer">full-stack developer </a></div></div>
+					<div class="card"> <div class="card_cont">Try this: <a class="button" target="blank" href="https://no.linkedin.com/jobs/search?keywords=full-stack engineer">full-stack engineer</a></div></div>
+					<div class="card"> <div class="card_cont">Try this: <a class="button" target="blank" href="https://no.linkedin.com/jobs/search?keywords=full-stack senior developer">full-stack senior developer</a></div></div>
+					<div class="card"> <div class="card_cont">Try this: <a class="button" target="blank" href="https://no.linkedin.com/jobs/search?keywords=it systems developer">it systems developer </a></div></div>
+					<div class="card"> <div class="card_cont">Try this: <a class="button" target="blank" href="https://no.linkedin.com/jobs/search?keywords=junior developer">junior developer </a></div></div>
+					<div class="card"> <div class="card_cont">Try this: <a class="button" target="blank" href="https://no.linkedin.com/jobs/search?keywords=python developer">python developer </a></div></div>
+					<div class="card"> <div class="card_cont">Try this: <a class="button" target="blank" href="https://no.linkedin.com/jobs/search?keywords=python senior developer">python senior developer</a></div></div>
+					<div class="card"> <div class="card_cont">Try this: <a class="button" target="blank" href="https://no.linkedin.com/jobs/search?keywords=software developer">software developer </a></div></div>
+					<div class="card"> <div class="card_cont">Try this: <a class="button" target="blank" href="https://no.linkedin.com/jobs/search?keywords=software engineer">software engineer</a></div></div>
+					<div class="card"> <div class="card_cont">Try this: <a class="button" target="blank" href="https://no.linkedin.com/jobs/search?keywords=solutions integration analyst">solutions integration analyst</a></div></div>
+					<div class="card"> <div class="card_cont">Try this: <a class="button" target="blank" href="https://no.linkedin.com/jobs/search?keywords=solutions integration developer">solutions integration developer</a></div></div>
+					<div class="card"> <div class="card_cont">Try this: <a class="button" target="blank" href="https://no.linkedin.com/jobs/search?keywords=python developer">python developer</a></div></div>
+					<div class="card"> <div class="card_cont">Try this: <a class="button" target="blank" href="https://no.linkedin.com/jobs/search?keywords=data analyst">data analyst</a></div></div>
+					<div class="card"> <div class="card_cont">Try this: <a class="button" target="blank" href="https://no.linkedin.com/jobs/search?keywords=analyst">analyst</a></div></div>
+					<div class="card"> <div class="card_cont">Try this: <a class="button" target="blank" href="https://no.linkedin.com/jobs/search?keywords=junior engineer">junior engineer</a></div></div>
+					<div class="card"> <div class="card_cont">Try this: <a class="button" target="blank" href="https://no.linkedin.com/jobs/search?keywords=junior developer">junior developer</a></div></div>
+					<div class="card"> <div class="card_cont">Try this: <a class="button" target="blank" href="https://no.linkedin.com/jobs/search?keywords=associate developer">associate developer</a></div></div>
+					<div class="card"> <div class="card_cont">Try this: <a class="button" target="blank" href="https://no.linkedin.com/jobs/search?keywords=junior">junior</a></div></div>
+					<div class="card"> <div class="card_cont">Try this: <a class="button" target="blank" href="https://no.linkedin.com/jobs/search?keywords=data">data</a></div></div>
+					<div class="card"> <div class="card_cont">Try this: <a class="button" target="blank" href="https://no.linkedin.com/jobs/search?keywords=trainee">trainee</a></div></div>
+				</div>
+		</div>
+
+		<div class="innerdiv" id="a">
+				<h2>NOR : finn.com</h2>
+				<div class="card_container">
+					<div class="card"> <div class="card_cont">Try this: <a class="button" target="blank" href="https://www.finn.no/job/fulltime/search.html?q=back end developer">back end developer </a></div></div>
+					<div class="card"> <div class="card_cont">Try this: <a class="button" target="blank" href="https://www.finn.no/job/fulltime/search.html?q=big data analyst">big data analyst </a></div></div>
+					<div class="card"> <div class="card_cont">Try this: <a class="button" target="blank" href="https://www.finn.no/job/fulltime/search.html?q=big data data scientist">big data data scientist</a></div></div>
+					<div class="card"> <div class="card_cont">Try this: <a class="button" target="blank" href="https://www.finn.no/job/fulltime/search.html?q=big data developer">big data developer </a></div></div>
+					<div class="card"> <div class="card_cont">Try this: <a class="button" target="blank" href="https://www.finn.no/job/fulltime/search.html?q=data data scientist">data data scientist</a></div></div>
+					<div class="card"> <div class="card_cont">Try this: <a class="button" target="blank" href="https://www.finn.no/job/fulltime/search.html?q=data developer">data developer </a></div></div>
+					<div class="card"> <div class="card_cont">Try this: <a class="button" target="blank" href="https://www.finn.no/job/fulltime/search.html?q=data engineer">data engineer</a></div></div>
+					<div class="card"> <div class="card_cont">Try this: <a class="button" target="blank" href="https://www.finn.no/job/fulltime/search.html?q=database developer">database developer </a></div></div>
+					<div class="card"> <div class="card_cont">Try this: <a class="button" target="blank" href="https://www.finn.no/job/fulltime/search.html?q=database engineer">database engineer</a></div></div>
+					<div class="card"> <div class="card_cont">Try this: <a class="button" target="blank" href="https://www.finn.no/job/fulltime/search.html?q=data scientist">data scientist</a></div></div>
+					<div class="card"> <div class="card_cont">Try this: <a class="button" target="blank" href="https://www.finn.no/job/fulltime/search.html?q=full-stack developer">full-stack developer </a></div></div>
+					<div class="card"> <div class="card_cont">Try this: <a class="button" target="blank" href="https://www.finn.no/job/fulltime/search.html?q=full-stack engineer">full-stack engineer</a></div></div>
+					<div class="card"> <div class="card_cont">Try this: <a class="button" target="blank" href="https://www.finn.no/job/fulltime/search.html?q=full-stack senior developer">full-stack senior developer</a></div></div>
+					<div class="card"> <div class="card_cont">Try this: <a class="button" target="blank" href="https://www.finn.no/job/fulltime/search.html?q=it systems developer">it systems developer </a></div></div>
+					<div class="card"> <div class="card_cont">Try this: <a class="button" target="blank" href="https://www.finn.no/job/fulltime/search.html?q=junior developer">junior developer </a></div></div>
+					<div class="card"> <div class="card_cont">Try this: <a class="button" target="blank" href="https://www.finn.no/job/fulltime/search.html?q=python developer">python developer </a></div></div>
+					<div class="card"> <div class="card_cont">Try this: <a class="button" target="blank" href="https://www.finn.no/job/fulltime/search.html?q=python senior developer">python senior developer</a></div></div>
+					<div class="card"> <div class="card_cont">Try this: <a class="button" target="blank" href="https://www.finn.no/job/fulltime/search.html?q=software developer">software developer </a></div></div>
+					<div class="card"> <div class="card_cont">Try this: <a class="button" target="blank" href="https://www.finn.no/job/fulltime/search.html?q=software engineer">software engineer</a></div></div>
+					<div class="card"> <div class="card_cont">Try this: <a class="button" target="blank" href="https://www.finn.no/job/fulltime/search.html?q=solutions integration analyst">solutions integration analyst</a></div></div>
+					<div class="card"> <div class="card_cont">Try this: <a class="button" target="blank" href="https://www.finn.no/job/fulltime/search.html?q=solutions integration developer">solutions integration developer</a></div></div>
+					<div class="card"> <div class="card_cont">Try this: <a class="button" target="blank" href="https://www.finn.no/job/fulltime/search.html?q=python developer">python developer</a></div></div>
+					<div class="card"> <div class="card_cont">Try this: <a class="button" target="blank" href="https://www.finn.no/job/fulltime/search.html?q=data analyst">data analyst</a></div></div>
+					<div class="card"> <div class="card_cont">Try this: <a class="button" target="blank" href="https://www.finn.no/job/fulltime/search.html?q=analyst">analyst</a></div></div>
+					<div class="card"> <div class="card_cont">Try this: <a class="button" target="blank" href="https://www.finn.no/job/fulltime/search.html?q=junior engineer">junior engineer</a></div></div>
+					<div class="card"> <div class="card_cont">Try this: <a class="button" target="blank" href="https://www.finn.no/job/fulltime/search.html?q=junior developer">junior developer</a></div></div>
+					<div class="card"> <div class="card_cont">Try this: <a class="button" target="blank" href="https://www.finn.no/job/fulltime/search.html?q=associate developer">associate developer</a></div></div>
+					<div class="card"> <div class="card_cont">Try this: <a class="button" target="blank" href="https://www.finn.no/job/fulltime/search.html?q=junior">junior</a></div></div>
+					<div class="card"> <div class="card_cont">Try this: <a class="button" target="blank" href="https://www.finn.no/job/fulltime/search.html?q=data">data</a></div></div>
+					<div class="card"> <div class="card_cont">Try this: <a class="button" target="blank" href="https://www.finn.no/job/fulltime/search.html?q=trainee">trainee</a></div></div>
+				</div>
+		</div>
+
+		<div class="innerdiv" id="a">
+				<h2>LT : by company / staff agency</h2>
+				<div class="card_container">
+
+
+
+
+					</div>
+			</div>
+
+
+	<div class="innerdiv" id="a">
+		<p>
+		Lorem ipsum dolor sit amet, mundi copiosae cu cum. Ut has quodsi legendos dissentiunt, nec atomorum antiopam signiferumque eu, ut sed brute omittantur persequeris. Id magna interpretaris eos, albucius copiosae conclusionemque pri te, animal vivendo volutpat ius ei. Dolorem apeirian vis ea.
+		</p>
+		
+		<p>
+		Try this: <div class="card_cont"><a class="button" target="blank" href="https://www.cv.lt/nuolatinis-darbas?text=python developer">python developer </a></div>
+		</p>
+
+		<p>
+		Lorem ipsum dolor sit amet, mundi copiosae cu cum. Ut has quodsi legendos dissentiunt, nec atomorum antiopam signiferumque eu, ut sed brute omittantur persequeris. Id magna interpretaris eos, albucius copiosae conclusionemque pri te, animal vivendo volutpat ius ei. Dolorem apeirian vis ea.
+		</p>
+		<p>
+				Lorem ipsum dolor sit amet, mundi copiosae cu cum. Ut has quodsi legendos dissentiunt, nec atomorum antiopam signiferumque eu, ut sed brute omittantur persequeris. Id magna interpretaris eos, albucius copiosae conclusionemque pri te, animal vivendo volutpat ius ei. Dolorem apeirian vis ea.
+				</p>
+
+	</div>
+	
+
+	</body>
+</html>

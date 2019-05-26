@@ -1,0 +1,295 @@
+<!doctype html>
+<html>
+	<head>
+	 <meta name="description" http-equiv="content-type" content="text/php; charset=utf-8" />
+	
+	<!--<title>my first html document</title>-->
+	<title>assistant.jobsearch</title>
+	
+	
+	<link rel="icon" href="/favicon.png" sizes="16x16" type="image/png">
+	<style>
+		
+
+
+		body{
+			/*
+			height:100%;
+			width:100%;
+			*/
+			background-color: #f2f0f0ff;
+			font-family: arial;
+			font-size: 12pt;
+		}
+
+		p{			
+			text-align: justify;
+		}
+
+		.innerdiv{
+			position:relative;
+			top:15%;
+			width:60%;
+			margin-left:auto;
+			margin-right:auto;
+			height: auto;
+			background-color: #e3e3e3ff;
+			font-family: arial;
+			padding: 10pt;
+			margin-bottom: 15pt;
+
+		}
+		
+		.card_container{
+			display: grid;
+			/*						
+			grid-template-columns: 40px 50px auto 50px 40px;
+			grid-template-rows: 25% 100px auto;
+			grid-template-columns: 1fr 1fr;
+			grid-template-columns: repeat(4, 24%); 
+			The fr unit removes the need for math, when used with grid-gap: 10px; / fractional unit,
+			grid-template-columns: repeat(4, 1fr);
+			*/
+			grid-template-columns: repeat(8, 1fr);
+			grid-template-rows: repeat(2, auto);
+			justify-content: space-between;
+			align-content: space-evenly;
+			align-items: stretch;  /*height fill*/
+			row-gap: 5px;
+			grid-gap: 10px;
+			
+		}
+
+		@media (max-width: 1400px) {
+		/*small screen params*/
+		.card_container {
+			/*
+			grid-template-columns: repeat(12, 1fr);
+			*/
+			grid-template-columns: repeat(4, 1fr);
+		  }
+		}		
+
+		@media (max-width: 900px) {
+		/*small screen params*/
+		.card_container {
+			/*
+			grid-template-columns: repeat(12, 1fr);
+			*/
+			grid-template-columns: 1fr 1fr;
+		  }
+		}		
+		
+		@media (max-width: 500px) {
+		/*small screen params*/
+		.card_container {
+			/*
+			grid-template-columns: repeat(12, 1fr);
+			*/
+			grid-template-columns: 1fr;
+		  }
+		}
+		
+
+		
+		.card{
+			/*
+			text-aligh: justify-center;
+			text-align-last: center;
+			align-content:flex-start;
+			display: flex;
+			display: inline-block;
+			align-items:center;
+			 Your text needs some kind of container (div, span, p,...) 
+						*/
+			display:flex;
+			height: auto;
+			text-align:center;
+			align-items:center;
+			justify-content: center;
+			background-color: #ffbf2dff;
+			padding: 10pt;  
+		}
+		.button {
+			/*
+			font: bold 11px Arial;
+			border-top: 1px solid #CCCCCC;
+			border-right: 1px solid #333333;
+			border-bottom: 1px solid #333333;
+			border-left: 1px solid #CCCCCC;
+			background-color: #CCCCCC;
+			color: black;
+			padding: 2px 2px 2px 2px;
+			display: inline-block;
+			font-size: 12px;
+			*/
+			display: inline-flex;
+			font: Arial;
+			color: white;
+			background-color: #008CBA;
+			text-decoration: none;
+			padding: 3px;
+			margin-top: 10px;
+			border:none;
+			text-align: center;
+			height:3.5em;
+			align-items:center;
+			justify-content: center;
+			vertical-align: middle;
+			width: 100%
+		}	
+	</style>
+	</head>
+	<body>
+	
+	<div class="innerdiv" id="a">
+		<h1>assistant.jobsearch</h1>
+		Last updated: 16:03 5/17/2019
+	</div>
+	
+	<div class="innerdiv" id="a">
+		<h2>LT : cv.lt</h2>
+		<div class="card_container">
+			<div class="card"> <div class="card_cont">Try this: <a class="button" target="blank" href="https://www.cv.lt/nuolatinis-darbas?text=back end developer">back end developer </a></div></div>
+			<div class="card"> <div class="card_cont">Try this: <a class="button" target="blank" href="https://www.cv.lt/nuolatinis-darbas?text=big data analyst">big data analyst </a></div></div>
+			<div class="card"> <div class="card_cont">Try this: <a class="button" target="blank" href="https://www.cv.lt/nuolatinis-darbas?text=big data data scientist">big data data scientist</a></div></div>
+			<div class="card"> <div class="card_cont">Try this: <a class="button" target="blank" href="https://www.cv.lt/nuolatinis-darbas?text=big data developer">big data developer </a></div></div>
+			<div class="card"> <div class="card_cont">Try this: <a class="button" target="blank" href="https://www.cv.lt/nuolatinis-darbas?text=data data scientist">data data scientist</a></div></div>
+			<div class="card"> <div class="card_cont">Try this: <a class="button" target="blank" href="https://www.cv.lt/nuolatinis-darbas?text=data developer">data developer </a></div></div>
+			<div class="card"> <div class="card_cont">Try this: <a class="button" target="blank" href="https://www.cv.lt/nuolatinis-darbas?text=data engineer">data engineer</a></div></div>
+			<div class="card"> <div class="card_cont">Try this: <a class="button" target="blank" href="https://www.cv.lt/nuolatinis-darbas?text=database developer">database developer </a></div></div>
+			<div class="card"> <div class="card_cont">Try this: <a class="button" target="blank" href="https://www.cv.lt/nuolatinis-darbas?text=database engineer">database engineer</a></div></div>
+			<div class="card"> <div class="card_cont">Try this: <a class="button" target="blank" href="https://www.cv.lt/nuolatinis-darbas?text=data scientist">data scientist</a></div></div>
+			<div class="card"> <div class="card_cont">Try this: <a class="button" target="blank" href="https://www.cv.lt/nuolatinis-darbas?text=full-stack developer">full-stack developer </a></div></div>
+			<div class="card"> <div class="card_cont">Try this: <a class="button" target="blank" href="https://www.cv.lt/nuolatinis-darbas?text=full-stack engineer">full-stack engineer</a></div></div>
+			<div class="card"> <div class="card_cont">Try this: <a class="button" target="blank" href="https://www.cv.lt/nuolatinis-darbas?text=full-stack senior developer">full-stack senior developer</a></div></div>
+			<div class="card"> <div class="card_cont">Try this: <a class="button" target="blank" href="https://www.cv.lt/nuolatinis-darbas?text=it systems developer">it systems developer </a></div></div>
+			<div class="card"> <div class="card_cont">Try this: <a class="button" target="blank" href="https://www.cv.lt/nuolatinis-darbas?text=junior developer">junior developer </a></div></div>
+			<div class="card"> <div class="card_cont">Try this: <a class="button" target="blank" href="https://www.cv.lt/nuolatinis-darbas?text=python developer">python developer </a></div></div>
+			<div class="card"> <div class="card_cont">Try this: <a class="button" target="blank" href="https://www.cv.lt/nuolatinis-darbas?text=python senior developer">python senior developer</a></div></div>
+			<div class="card"> <div class="card_cont">Try this: <a class="button" target="blank" href="https://www.cv.lt/nuolatinis-darbas?text=software developer">software developer </a></div></div>
+			<div class="card"> <div class="card_cont">Try this: <a class="button" target="blank" href="https://www.cv.lt/nuolatinis-darbas?text=software engineer">software engineer</a></div></div>
+			<div class="card"> <div class="card_cont">Try this: <a class="button" target="blank" href="https://www.cv.lt/nuolatinis-darbas?text=solutions integration analyst">solutions integration analyst</a></div></div>
+			<div class="card"> <div class="card_cont">Try this: <a class="button" target="blank" href="https://www.cv.lt/nuolatinis-darbas?text=solutions integration developer">solutions integration developer</a></div></div>
+			<div class="card"> <div class="card_cont">Try this: <a class="button" target="blank" href="https://www.cv.lt/nuolatinis-darbas?text=python developer">python developer</a></div></div>
+			<div class="card"> <div class="card_cont">Try this: <a class="button" target="blank" href="https://www.cv.lt/nuolatinis-darbas?text=data analyst">data analyst</a></div></div>
+			<div class="card"> <div class="card_cont">Try this: <a class="button" target="blank" href="https://www.cv.lt/nuolatinis-darbas?text=analyst">analyst</a></div></div>
+			<div class="card"> <div class="card_cont">Try this: <a class="button" target="blank" href="https://www.cv.lt/nuolatinis-darbas?text=junior engineer">junior engineer</a></div></div>
+			<div class="card"> <div class="card_cont">Try this: <a class="button" target="blank" href="https://www.cv.lt/nuolatinis-darbas?text=junior developer">junior developer</a></div></div>
+			<div class="card"> <div class="card_cont">Try this: <a class="button" target="blank" href="https://www.cv.lt/nuolatinis-darbas?text=associate developer">associate developer</a></div></div>
+			<div class="card"> <div class="card_cont">Try this: <a class="button" target="blank" href="https://www.cv.lt/nuolatinis-darbas?text=junior">junior</a></div></div>
+			<div class="card"> <div class="card_cont">Try this: <a class="button" target="blank" href="https://www.cv.lt/nuolatinis-darbas?text=data">data</a></div></div>
+			<div class="card"> <div class="card_cont">Try this: <a class="button" target="blank" href="https://www.cv.lt/nuolatinis-darbas?text=trainee">trainee</a></div></div>
+		</div>
+	</div>
+
+		<div class="innerdiv" id="a">
+			<h2>LT : cvonline.lt</h2>
+			<div class="card_container">
+				<div class="card"> <div class="card_cont">Try this: <a class="button" target="blank" href="https://www.cvonline.lt/darbo-skelbimai/q-back end developer">back end developer </a></div></div>
+				<div class="card"> <div class="card_cont">Try this: <a class="button" target="blank" href="https://www.cvonline.lt/darbo-skelbimai/q-big data analyst">big data analyst </a></div></div>
+				<div class="card"> <div class="card_cont">Try this: <a class="button" target="blank" href="https://www.cvonline.lt/darbo-skelbimai/q-big data data scientist">big data data scientist</a></div></div>
+				<div class="card"> <div class="card_cont">Try this: <a class="button" target="blank" href="https://www.cvonline.lt/darbo-skelbimai/q-big data developer">big data developer </a></div></div>
+				<div class="card"> <div class="card_cont">Try this: <a class="button" target="blank" href="https://www.cvonline.lt/darbo-skelbimai/q-data data scientist">data data scientist</a></div></div>
+				<div class="card"> <div class="card_cont">Try this: <a class="button" target="blank" href="https://www.cvonline.lt/darbo-skelbimai/q-data developer">data developer </a></div></div>
+				<div class="card"> <div class="card_cont">Try this: <a class="button" target="blank" href="https://www.cvonline.lt/darbo-skelbimai/q-data engineer">data engineer</a></div></div>
+				<div class="card"> <div class="card_cont">Try this: <a class="button" target="blank" href="https://www.cvonline.lt/darbo-skelbimai/q-database developer">database developer </a></div></div>
+				<div class="card"> <div class="card_cont">Try this: <a class="button" target="blank" href="https://www.cvonline.lt/darbo-skelbimai/q-database engineer">database engineer</a></div></div>
+				<div class="card"> <div class="card_cont">Try this: <a class="button" target="blank" href="https://www.cvonline.lt/darbo-skelbimai/q-data scientist">data scientist</a></div></div>
+				<div class="card"> <div class="card_cont">Try this: <a class="button" target="blank" href="https://www.cvonline.lt/darbo-skelbimai/q-full-stack developer">full-stack developer </a></div></div>
+				<div class="card"> <div class="card_cont">Try this: <a class="button" target="blank" href="https://www.cvonline.lt/darbo-skelbimai/q-full-stack engineer">full-stack engineer</a></div></div>
+				<div class="card"> <div class="card_cont">Try this: <a class="button" target="blank" href="https://www.cvonline.lt/darbo-skelbimai/q-full-stack senior developer">full-stack senior developer</a></div></div>
+				<div class="card"> <div class="card_cont">Try this: <a class="button" target="blank" href="https://www.cvonline.lt/darbo-skelbimai/q-it systems developer">it systems developer </a></div></div>
+				<div class="card"> <div class="card_cont">Try this: <a class="button" target="blank" href="https://www.cvonline.lt/darbo-skelbimai/q-junior developer">junior developer </a></div></div>
+				<div class="card"> <div class="card_cont">Try this: <a class="button" target="blank" href="https://www.cvonline.lt/darbo-skelbimai/q-python developer">python developer </a></div></div>
+				<div class="card"> <div class="card_cont">Try this: <a class="button" target="blank" href="https://www.cvonline.lt/darbo-skelbimai/q-python senior developer">python senior developer</a></div></div>
+				<div class="card"> <div class="card_cont">Try this: <a class="button" target="blank" href="https://www.cvonline.lt/darbo-skelbimai/q-software developer">software developer </a></div></div>
+				<div class="card"> <div class="card_cont">Try this: <a class="button" target="blank" href="https://www.cvonline.lt/darbo-skelbimai/q-software engineer">software engineer</a></div></div>
+				<div class="card"> <div class="card_cont">Try this: <a class="button" target="blank" href="https://www.cvonline.lt/darbo-skelbimai/q-solutions integration analyst">solutions integration analyst</a></div></div>
+				<div class="card"> <div class="card_cont">Try this: <a class="button" target="blank" href="https://www.cvonline.lt/darbo-skelbimai/q-solutions integration developer">solutions integration developer</a></div></div>
+				<div class="card"> <div class="card_cont">Try this: <a class="button" target="blank" href="https://www.cvonline.lt/darbo-skelbimai/q-python developer">python developer</a></div></div>
+				<div class="card"> <div class="card_cont">Try this: <a class="button" target="blank" href="https://www.cvonline.lt/darbo-skelbimai/q-data analyst">data analyst</a></div></div>
+				<div class="card"> <div class="card_cont">Try this: <a class="button" target="blank" href="https://www.cvonline.lt/darbo-skelbimai/q-analyst">analyst</a></div></div>
+				<div class="card"> <div class="card_cont">Try this: <a class="button" target="blank" href="https://www.cvonline.lt/darbo-skelbimai/q-junior engineer">junior engineer</a></div></div>
+				<div class="card"> <div class="card_cont">Try this: <a class="button" target="blank" href="https://www.cvonline.lt/darbo-skelbimai/q-junior developer">junior developer</a></div></div>
+				<div class="card"> <div class="card_cont">Try this: <a class="button" target="blank" href="https://www.cvonline.lt/darbo-skelbimai/q-associate developer">associate developer</a></div></div>
+				<div class="card"> <div class="card_cont">Try this: <a class="button" target="blank" href="https://www.cvonline.lt/darbo-skelbimai/q-junior">junior</a></div></div>
+				<div class="card"> <div class="card_cont">Try this: <a class="button" target="blank" href="https://www.cvonline.lt/darbo-skelbimai/q-data">data</a></div></div>
+				<div class="card"> <div class="card_cont">Try this: <a class="button" target="blank" href="https://www.cvonline.lt/darbo-skelbimai/q-trainee">trainee</a></div></div>
+			</div>
+		</div>
+
+		<div class="innerdiv" id="a">
+				<h2>LT : linkedin.com</h2>
+				<div class="card_container">
+					<div class="card"> <div class="card_cont">Try this: <a class="button" target="blank" href="https://lt.linkedin.com/jobs/search?location=Lithuania&keywords=back end developer">back end developer </a></div></div>
+					<div class="card"> <div class="card_cont">Try this: <a class="button" target="blank" href="https://lt.linkedin.com/jobs/search?location=Lithuania&keywords=big data analyst">big data analyst </a></div></div>
+					<div class="card"> <div class="card_cont">Try this: <a class="button" target="blank" href="https://lt.linkedin.com/jobs/search?location=Lithuania&keywords=big data data scientist">big data data scientist</a></div></div>
+					<div class="card"> <div class="card_cont">Try this: <a class="button" target="blank" href="https://lt.linkedin.com/jobs/search?location=Lithuania&keywords=big data developer">big data developer </a></div></div>
+					<div class="card"> <div class="card_cont">Try this: <a class="button" target="blank" href="https://lt.linkedin.com/jobs/search?location=Lithuania&keywords=data data scientist">data data scientist</a></div></div>
+					<div class="card"> <div class="card_cont">Try this: <a class="button" target="blank" href="https://lt.linkedin.com/jobs/search?location=Lithuania&keywords=data developer">data developer </a></div></div>
+					<div class="card"> <div class="card_cont">Try this: <a class="button" target="blank" href="https://lt.linkedin.com/jobs/search?location=Lithuania&keywords=data engineer">data engineer</a></div></div>
+					<div class="card"> <div class="card_cont">Try this: <a class="button" target="blank" href="https://lt.linkedin.com/jobs/search?location=Lithuania&keywords=database developer">database developer </a></div></div>
+					<div class="card"> <div class="card_cont">Try this: <a class="button" target="blank" href="https://lt.linkedin.com/jobs/search?location=Lithuania&keywords=database engineer">database engineer</a></div></div>
+					<div class="card"> <div class="card_cont">Try this: <a class="button" target="blank" href="https://lt.linkedin.com/jobs/search?location=Lithuania&keywords=data scientist">data scientist</a></div></div>
+					<div class="card"> <div class="card_cont">Try this: <a class="button" target="blank" href="https://lt.linkedin.com/jobs/search?location=Lithuania&keywords=full-stack developer">full-stack developer </a></div></div>
+					<div class="card"> <div class="card_cont">Try this: <a class="button" target="blank" href="https://lt.linkedin.com/jobs/search?location=Lithuania&keywords=full-stack engineer">full-stack engineer</a></div></div>
+					<div class="card"> <div class="card_cont">Try this: <a class="button" target="blank" href="https://lt.linkedin.com/jobs/search?location=Lithuania&keywords=full-stack senior developer">full-stack senior developer</a></div></div>
+					<div class="card"> <div class="card_cont">Try this: <a class="button" target="blank" href="https://lt.linkedin.com/jobs/search?location=Lithuania&keywords=it systems developer">it systems developer </a></div></div>
+					<div class="card"> <div class="card_cont">Try this: <a class="button" target="blank" href="https://lt.linkedin.com/jobs/search?location=Lithuania&keywords=junior developer">junior developer </a></div></div>
+					<div class="card"> <div class="card_cont">Try this: <a class="button" target="blank" href="https://lt.linkedin.com/jobs/search?location=Lithuania&keywords=python developer">python developer </a></div></div>
+					<div class="card"> <div class="card_cont">Try this: <a class="button" target="blank" href="https://lt.linkedin.com/jobs/search?location=Lithuania&keywords=python senior developer">python senior developer</a></div></div>
+					<div class="card"> <div class="card_cont">Try this: <a class="button" target="blank" href="https://lt.linkedin.com/jobs/search?location=Lithuania&keywords=software developer">software developer </a></div></div>
+					<div class="card"> <div class="card_cont">Try this: <a class="button" target="blank" href="https://lt.linkedin.com/jobs/search?location=Lithuania&keywords=software engineer">software engineer</a></div></div>
+					<div class="card"> <div class="card_cont">Try this: <a class="button" target="blank" href="https://lt.linkedin.com/jobs/search?location=Lithuania&keywords=solutions integration analyst">solutions integration analyst</a></div></div>
+					<div class="card"> <div class="card_cont">Try this: <a class="button" target="blank" href="https://lt.linkedin.com/jobs/search?location=Lithuania&keywords=solutions integration developer">solutions integration developer</a></div></div>
+					<div class="card"> <div class="card_cont">Try this: <a class="button" target="blank" href="https://lt.linkedin.com/jobs/search?location=Lithuania&keywords=python developer">python developer</a></div></div>
+					<div class="card"> <div class="card_cont">Try this: <a class="button" target="blank" href="https://lt.linkedin.com/jobs/search?location=Lithuania&keywords=data analyst">data analyst</a></div></div>
+					<div class="card"> <div class="card_cont">Try this: <a class="button" target="blank" href="https://lt.linkedin.com/jobs/search?location=Lithuania&keywords=analyst">analyst</a></div></div>
+					<div class="card"> <div class="card_cont">Try this: <a class="button" target="blank" href="https://lt.linkedin.com/jobs/search?location=Lithuania&keywords=junior engineer">junior engineer</a></div></div>
+					<div class="card"> <div class="card_cont">Try this: <a class="button" target="blank" href="https://lt.linkedin.com/jobs/search?location=Lithuania&keywords=junior developer">junior developer</a></div></div>
+					<div class="card"> <div class="card_cont">Try this: <a class="button" target="blank" href="https://lt.linkedin.com/jobs/search?location=Lithuania&keywords=associate developer">associate developer</a></div></div>
+					<div class="card"> <div class="card_cont">Try this: <a class="button" target="blank" href="https://lt.linkedin.com/jobs/search?location=Lithuania&keywords=junior">junior</a></div></div>
+					<div class="card"> <div class="card_cont">Try this: <a class="button" target="blank" href="https://lt.linkedin.com/jobs/search?location=Lithuania&keywords=data">data</a></div></div>
+					<div class="card"> <div class="card_cont">Try this: <a class="button" target="blank" href="https://lt.linkedin.com/jobs/search?location=Lithuania&keywords=trainee">trainee</a></div></div>
+				</div>
+		</div>
+
+		<div class="innerdiv" id="a">
+				<h2>LT : by company / staff agency</h2>
+				<div class="card_container">
+					<div class="card"> <div class="card_cont">Try this: <a class="button" target="blank" href="https://www.cv.lt/devbridge-darbo-skelbimai">devbridge</a></div></div>
+					<div class="card"> <div class="card_cont">Try this: <a class="button" target="blank" href="https://www.cv.lt/strategic-staffing-solutions-international-darbo-skelbimai">S3I</a></div></div>
+					<div class="card"> <div class="card_cont">Try this: <a class="button" target="blank" href="https://www.cv.lt/alliance-for-recruitment-darbo-skelbimai">alliance-for-recruitment</a></div></div>
+					<div class="card"> <div class="card_cont">Try this: <a class="button" target="blank" href="https://www.cv.lt/visma-lietuva-darbo-skelbimai">visma</a></div></div>
+					<div class="card"> <div class="card_cont">Try this: <a class="button" target="blank" href="https://www.cvonline.lt/darbo-skelbimai/tesonet">tesonet</a></div></div>
+					<div class="card"> <div class="card_cont">Try this: <a class="button" target="blank" href="https://careers.cognizant.com/">cognizant</a></div></div>
+
+
+
+
+					</div>
+			</div>
+
+
+	<div class="innerdiv" id="a">
+		<p>
+		Lorem ipsum dolor sit amet, mundi copiosae cu cum. Ut has quodsi legendos dissentiunt, nec atomorum antiopam signiferumque eu, ut sed brute omittantur persequeris. Id magna interpretaris eos, albucius copiosae conclusionemque pri te, animal vivendo volutpat ius ei. Dolorem apeirian vis ea.
+		</p>
+		
+		<p>
+		Try this: <div class="card_cont"><a class="button" target="blank" href="https://www.cv.lt/nuolatinis-darbas?text=python developer">python developer </a></div>
+		</p>
+
+		<p>
+		Lorem ipsum dolor sit amet, mundi copiosae cu cum. Ut has quodsi legendos dissentiunt, nec atomorum antiopam signiferumque eu, ut sed brute omittantur persequeris. Id magna interpretaris eos, albucius copiosae conclusionemque pri te, animal vivendo volutpat ius ei. Dolorem apeirian vis ea.
+		</p>
+		<p>
+				Lorem ipsum dolor sit amet, mundi copiosae cu cum. Ut has quodsi legendos dissentiunt, nec atomorum antiopam signiferumque eu, ut sed brute omittantur persequeris. Id magna interpretaris eos, albucius copiosae conclusionemque pri te, animal vivendo volutpat ius ei. Dolorem apeirian vis ea.
+				</p>
+
+	</div>
+	
+
+	</body>
+</html>

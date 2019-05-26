@@ -1,0 +1,266 @@
+<!doctype html>
+<html>
+	<head>
+	 <meta name="description" http-equiv="content-type" content="text/php; charset=utf-8" />
+	
+	<!--<title>my first html document</title>-->
+	<title>assistant.travel</title>
+	
+	
+	<link rel="icon" href="/favicon.png" sizes="16x16" type="image/png">
+	<style>
+		
+
+
+		body{
+			/*
+			height:100%;
+			width:100%;
+			*/
+			background-color: #f2f0f0ff;
+			font-family: arial;
+			font-size: 12pt;
+		}
+
+		p{			
+			text-align: justify;
+		}
+
+		.innerdiv{
+			position:relative;
+			top:15%;
+			width:60%;
+			margin-left:auto;
+			margin-right:auto;
+			height: auto;
+			background-color: #e3e3e3ff;
+			font-family: arial;
+			padding: 10pt;
+			margin-bottom: 15pt;
+
+		}
+		
+		.card_container{
+			display: grid;
+			/*						
+			grid-template-columns: 40px 50px auto 50px 40px;
+			grid-template-rows: 25% 100px auto;
+			grid-template-columns: 1fr 1fr;
+			grid-template-columns: repeat(4, 24%); 
+			The fr unit removes the need for math, when used with grid-gap: 10px; / fractional unit,
+			grid-template-columns: repeat(4, 1fr);
+			*/
+			grid-template-columns: repeat(8, 1fr);
+			grid-template-rows: repeat(2, auto);
+			justify-content: space-between;
+			align-content: space-evenly;
+			align-items: stretch;  /*height fill*/
+			row-gap: 5px;
+			grid-gap: 10px;
+			
+		}
+
+		@media (max-width: 1400px) {
+		/*small screen params*/
+		.card_container {
+			/*
+			grid-template-columns: repeat(12, 1fr);
+			*/
+			grid-template-columns: repeat(4, 1fr);
+		  }
+		}		
+
+		@media (max-width: 900px) {
+		/*small screen params*/
+		.card_container {
+			/*
+			grid-template-columns: repeat(12, 1fr);
+			*/
+			grid-template-columns: 1fr 1fr;
+		  }
+		}		
+		
+		@media (max-width: 500px) {
+		/*small screen params*/
+		.card_container {
+			/*
+			grid-template-columns: repeat(12, 1fr);
+			*/
+			grid-template-columns: 1fr;
+		  }
+		}
+		
+
+		
+		.card{
+			/*
+			text-aligh: justify-center;
+			text-align-last: center;
+			align-content:flex-start;
+			display: flex;
+			display: inline-block;
+			align-items:center;
+			 Your text needs some kind of container (div, span, p,...) 
+						*/
+			display:flex;
+			height: auto;
+			text-align:center;
+			align-items:center;
+			justify-content: center;
+			background-color: #ffbf2dff;
+			padding: 10pt;  
+		}
+		.button {
+			/*
+			font: bold 11px Arial;
+			border-top: 1px solid #CCCCCC;
+			border-right: 1px solid #333333;
+			border-bottom: 1px solid #333333;
+			border-left: 1px solid #CCCCCC;
+			background-color: #CCCCCC;
+			color: black;
+			padding: 2px 2px 2px 2px;
+			display: inline-block;
+			font-size: 12px;
+			*/
+			display: inline-flex;
+			font: Arial;
+			color: white;
+			background-color: #008CBA;
+			text-decoration: none;
+			padding: 3px;
+			margin-top: 10px;
+			border:none;
+			text-align: center;
+			height:3.5em;
+			align-items:center;
+			justify-content: center;
+			vertical-align: middle;
+			width: 100%
+		}	
+	</style>
+	</head>
+	<body>
+	
+	<div class="innerdiv" id="a">
+		<h1>assistant.travel</h1>
+		Last updated: 16:03 5/16/2019
+	</div>
+	
+	<div class="innerdiv" id="a">
+		<h2>ticket.search</h2>
+		<div class="card_container">
+			<div class="card"> <div class="card_cont">Click this: <a class="button" target="blank" href="http://azair.eu/">azair.eu/</a></div></div>
+<div class="card"> <div class="card_cont">Click this: <a class="button" target="blank" href="http://kiwi.com/">kiwi.com/</a></div></div>
+<div class="card"> <div class="card_cont">Click this: <a class="button" target="blank" href="https://www.skyscanner.com/">skyscanner.com/</a></div></div>
+<div class="card"> <div class="card_cont">Click this: <a class="button" target="blank" href="https://www.kayak.com/">kayak.com/</a></div></div>
+
+		</div>
+	</div>
+	
+	<div class="innerdiv" id="a">
+		<h2>travel.planning</h2>
+		<div class="card_container">
+			<div class="card"> <div class="card_cont">Click this: <a class="button" target="blank" href="https://travel.sygic.com/">travel.sygic.com/</a></div></div>
+<div class="card"> <div class="card_cont">Click this: <a class="button" target="blank" href="https://citymapper.com/?lang=en">citymapper.com/?lang=en</a></div></div>
+<div class="card"> <div class="card_cont">Click this: <a class="button" target="blank" href="https://www.swarmapp.com/">swarmapp.com/</a></div></div>
+<div class="card"> <div class="card_cont">Click this: <a class="button" target="blank" href="https://www.appintheair.mobi/">appintheair.mobi/</a></div></div>
+<div class="card"> <div class="card_cont">Click this: <a class="button" target="blank" href="https://get.google.com/trips/">google.com/trips/</a></div></div>
+
+		</div>
+	</div>
+	
+	<div class="innerdiv" id="a">
+		<h2>locations.advice</h2>
+		<div class="card_container">
+			<div class="card"> <div class="card_cont">Try this: <a class="button" target="blank" href="https://www.lonelyplanet.com/">lonelyplanet.com/</a></div></div>
+<div class="card"> <div class="card_cont">Try this: <a class="button" target="blank" href="https://www.wikivoyage.com/">wikivoyage.com/</a></div></div>
+<div class="card"> <div class="card_cont">Try this: <a class="button" target="blank" href="https://perito-burrito.com/">perito-burrito.com/</a></div></div>
+<div class="card"> <div class="card_cont">Try this: <a class="button" target="blank" href="https://www.atlasobscura.com/">atlasobscura.com/</a></div></div>
+
+		</div>
+	</div>
+	
+	<div class="innerdiv" id="a">
+		<h2>inlocation.housing.search</h2>
+		<div class="card_container">
+			<div class="card"> <div class="card_cont">Try this: <a class="button" target="blank" href="http://booking.com">booking.com</a></div></div>
+<div class="card"> <div class="card_cont">Try this: <a class="button" target="blank" href="http://airbnb.com">airbnb.com</a></div></div>
+
+		</div>
+	</div>
+	
+	<div class="innerdiv" id="a">
+		<h2>inlocation.reviews</h2>
+		<div class="card_container">
+			<div class="card"> <div class="card_cont">Try this: <a class="button" target="blank" href="https://foursquare.com/">foursquare.com/</a></div></div>
+<div class="card"> <div class="card_cont">Try this: <a class="button" target="blank" href="https://tripit.com/">tripit.com/</a></div></div>
+<div class="card"> <div class="card_cont">Try this: <a class="button" target="blank" href="https://tripadvisor.com/">tripadvisor.com/</a></div></div>
+
+		</div>
+	</div>
+	
+	<div class="innerdiv" id="a">
+		<h2>inlocation.transportation</h2>
+		<div class="card_container">
+			<div class="card"> <div class="card_cont">Try this: <a class="button" target="blank" href="https://citymapper.com/">citymapper.com/</a></div></div>
+<div class="card"> <div class="card_cont">Try this: <a class="button" target="blank" href="https://www.tripit.com/">tripit.com/</a></div></div>
+<div class="card"> <div class="card_cont">Try this: <a class="button" target="blank" href="https://www.omio.com/">omio.com/</a></div></div>
+<div class="card"> <div class="card_cont">Try this: <a class="button" target="blank" href="https://www.rome2rio.com/">rome2rio.com/</a></div></div>
+
+		</div>
+	</div>
+	
+	<div class="innerdiv" id="a">
+		<h2>airport.lounges</h2>
+		<div class="card_container">
+			<div class="card"> <div class="card_cont">Try this: <a class="button" target="blank" href="https://www.prioritypass.com/en">prioritypass.com/en</a></div></div>
+<div class="card"> <div class="card_cont">Try this: <a class="button" target="blank" href="https://www.loungekey.com/">loungekey.com/</a></div></div>
+<div class="card"> <div class="card_cont">Try this: <a class="button" target="blank" href="https://www.loungebuddy.com/">loungebuddy.com/</a></div></div>
+
+		</div>
+	</div>
+	
+	<div class="innerdiv" id="a">
+		<h2>locations.maps</h2>
+		<div class="card_container">
+			<div class="card"> <div class="card_cont">Try this: <a class="button" target="blank" href="https://maps.me/">maps.me/</a></div></div>
+<div class="card"> <div class="card_cont">Try this: <a class="button" target="blank" href="https://maps.google.com">maps.google.com</a></div></div>
+<div class="card"> <div class="card_cont">Try this: <a class="button" target="blank" href="https://www.waze.com/">waze.com/</a></div></div>
+
+		</div>
+	</div>
+	
+	<div class="innerdiv" id="a">
+		<h2>apps.phone</h2>
+		<div class="card_container">
+			<div class="card"> <div class="card_cont">Try this: <a class="button" target="blank" href="https://www.splitwise.com/">splitwise.com/</a></div></div>
+<div class="card"> <div class="card_cont">Try this: <a class="button" target="blank" href="https://www.flio.com/">flio.com/</a></div></div>
+<div class="card"> <div class="card_cont">Try this: <a class="button" target="blank" href="https://itunes.apple.com/us/app/flush-toilet-finder-map/id955254528?mt=8">itunes.apple.com/us/app/flush-toilet-finder-map/id955254528?mt=8</a></div></div>
+<div class="card"> <div class="card_cont">Try this: <a class="button" target="blank" href="http://elkapp.co/">elkapp.co/</a></div></div>
+
+		</div>
+	</div>
+	
+	<div class="innerdiv" id="a">
+		<h2>other links</h2>
+		<div class="card_container">
+			
+		</div>
+	</div>
+	
+	
+	<div class="innerdiv" id="a">
+		<p>
+		Lorem ipsum dolor sit amet, mundi copiosae cu cum. Ut has quodsi legendos dissentiunt, nec atomorum antiopam signiferumque eu, ut sed brute omittantur persequeris. Id magna interpretaris eos, albucius copiosae conclusionemque pri te, animal vivendo volutpat ius ei. Dolorem apeirian vis ea.
+		</p>
+		
+		<p>
+		Lorem ipsum dolor sit amet, mundi copiosae cu cum. Ut has quodsi legendos dissentiunt, nec atomorum antiopam signiferumque eu, ut sed brute omittantur persequeris. Id magna interpretaris eos, albucius copiosae conclusionemque pri te, animal vivendo volutpat ius ei. Dolorem apeirian vis ea.
+		</p>
+
+	</div>
+	
+
+	</body>
+</html>

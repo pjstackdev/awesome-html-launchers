@@ -1,0 +1,308 @@
+<!doctype html>
+<html>
+	<head>
+	 <meta name="description" http-equiv="content-type" content="text/php; charset=utf-8" />
+	
+	<!--<title>my first html document</title>-->
+	<title>assistant.projects</title>
+	
+	
+	<link rel="icon" href="/favicon.png" sizes="16x16" type="image/png">
+	<style>
+		
+
+
+		body{
+			/*
+			height:100%;
+			width:100%;
+			*/
+			background-color: #f2f0f0ff;
+			font-family: arial;
+			font-size: 12pt;
+		}
+
+		p{			
+			text-align: justify;
+		}
+
+		.innerdiv{
+			position:relative;
+			top:15%;
+			width:60%;
+			margin-left:auto;
+			margin-right:auto;
+			height: auto;
+			background-color: #e3e3e3ff;
+			font-family: arial;
+			padding: 10pt;
+			margin-bottom: 15pt;
+
+		}
+		
+		.card_container{
+			display: grid;
+			/*						
+			grid-template-columns: 40px 50px auto 50px 40px;
+			grid-template-rows: 25% 100px auto;
+			grid-template-columns: 1fr 1fr;
+			grid-template-columns: repeat(4, 24%); 
+			The fr unit removes the need for math, when used with grid-gap: 10px; / fractional unit,
+			grid-template-columns: repeat(4, 1fr);
+			*/
+			grid-template-columns: repeat(8, 1fr);
+			grid-template-rows: repeat(2, auto);
+			justify-content: space-between;
+			align-content: space-evenly;
+			align-items: stretch;  /*height fill*/
+			row-gap: 5px;
+			grid-gap: 10px;
+			
+		}
+
+		@media (max-width: 1400px) {
+		/*small screen params*/
+		.card_container {
+			/*
+			grid-template-columns: repeat(12, 1fr);
+			*/
+			grid-template-columns: repeat(4, 1fr);
+		  }
+		}		
+
+		@media (max-width: 900px) {
+		/*small screen params*/
+		.card_container {
+			/*
+			grid-template-columns: repeat(12, 1fr);
+			*/
+			grid-template-columns: 1fr 1fr;
+		  }
+		}		
+		
+		@media (max-width: 500px) {
+		/*small screen params*/
+		.card_container {
+			/*
+			grid-template-columns: repeat(12, 1fr);
+			*/
+			grid-template-columns: 1fr;
+		  }
+		}
+		
+
+		
+		.card{
+			/*
+			text-aligh: justify-center;
+			text-align-last: center;
+			align-content:flex-start;
+			display: flex;
+			display: inline-block;
+			align-items:center;
+			 Your text needs some kind of container (div, span, p,...) 
+						*/
+			display:flex;
+			height: auto;
+			text-align:center;
+			align-items:center;
+			justify-content: center;
+			background-color: #ffbf2dff;
+			padding: 10pt;  
+		}
+		.button {
+			/*
+			font: bold 11px Arial;
+			border-top: 1px solid #CCCCCC;
+			border-right: 1px solid #333333;
+			border-bottom: 1px solid #333333;
+			border-left: 1px solid #CCCCCC;
+			background-color: #CCCCCC;
+			color: black;
+			padding: 2px 2px 2px 2px;
+			display: inline-block;
+			font-size: 12px;
+			*/
+			display: inline-flex;
+			font: Arial;
+			color: white;
+			background-color: #008CBA;
+			text-decoration: none;
+			padding: 3px;
+			margin-top: 10px;
+			border:none;
+			text-align: center;
+			height:3.5em;
+			align-items:center;
+			justify-content: center;
+			vertical-align: middle;
+			width: 100%
+		}	
+	</style>
+	</head>
+	<body>
+	
+	<div class="innerdiv" id="a">
+		<h1>assistant.projects</h1>
+		Last updated: 16:03 5/16/2019
+	</div>
+	
+	<div class="innerdiv" id="a">
+		<h2>favorites</h2>
+		<div class="card_container">
+			<div class="card"> <div class="card_cont">Try this: <a class="button" target="blank" href="https://github.com/karan/Projects">mega project list</a></div></div>
+			<div class="card"> <div class="card_cont">Try this: <a class="button" target="blank" href="https://github.com/tuvtran/project-based-learning">project based learning</a></div></div>
+		</div>
+	</div>
+	
+	<div class="innerdiv" id="a">
+		<h2>general: coding </h2>
+		<div class="card_container">
+			<div class="card"> <div class="card_cont">Try this: <a class="button" target="blank" href="https://www.google.com/search?&q=coding easy projects">coding easy projects</a></div></div>
+			<div class="card"> <div class="card_cont">Try this: <a class="button" target="blank" href="https://www.google.com/search?&q=coding quick projects">coding quick projects</a></div></div>
+			<div class="card"> <div class="card_cont">Try this: <a class="button" target="blank" href="https://www.google.com/search?&q=coding fast projects ">coding fast projects </a></div></div>
+			<div class="card"> <div class="card_cont">Try this: <a class="button" target="blank" href="https://www.google.com/search?&q=coding portfolio projects">coding portfolio projects</a></div></div>
+			<div class="card"> <div class="card_cont">Try this: <a class="button" target="blank" href="https://www.google.com/search?&q=coding projects">coding projects</a></div></div>
+			<div class="card"> <div class="card_cont">Try this: <a class="button" target="blank" href="https://www.google.com/search?&q=coding projects github">coding projects github</a></div></div>
+			<div class="card"> <div class="card_cont">Try this: <a class="button" target="blank" href="https://www.google.com/search?&q=coding code projects">coding code projects</a></div></div>
+			<div class="card"> <div class="card_cont">Try this: <a class="button" target="blank" href="https://www.google.com/search?&q=coding project ideas github">coding project ideas github</a></div></div>
+			<div class="card"> <div class="card_cont">Try this: <a class="button" target="blank" href="https://www.google.com/search?&q=coding awesome projects list">coding awesome projects list</a></div></div>
+			<div class="card"> <div class="card_cont">Try this: <a class="button" target="blank" href="https://www.google.com/search?&q=coding awesome projects list github">coding awesome projects list github</a></div></div>
+			<div class="card"> <div class="card_cont">Try this: <a class="button" target="blank" href="https://www.google.com/search?&q=coding projects under 2 hours">coding projects under 2 hours</a></div></div>
+			<div class="card"> <div class="card_cont">Try this: <a class="button" target="blank" href="https://www.google.com/search?&q=coding projects under 15min">coding projects under 15min</a></div></div>
+			<div class="card"> <div class="card_cont">Try this: <a class="button" target="blank" href="https://www.google.com/search?&q=coding projects list">coding projects list</a></div></div>
+		</div>
+	</div>
+	
+	<div class="innerdiv" id="a">
+		<h2>python </h2>
+		<div class="card_container">
+			<div class="card"> <div class="card_cont">Try this: <a class="button" target="blank" href="https://www.google.com/search?&q=pyhthon easy projects">pyhthon easy projects</a></div></div>
+			<div class="card"> <div class="card_cont">Try this: <a class="button" target="blank" href="https://www.google.com/search?&q=pyhthon quick projects">pyhthon quick projects</a></div></div>
+			<div class="card"> <div class="card_cont">Try this: <a class="button" target="blank" href="https://www.google.com/search?&q=pyhthon fast projects ">pyhthon fast projects </a></div></div>
+			<div class="card"> <div class="card_cont">Try this: <a class="button" target="blank" href="https://www.google.com/search?&q=pyhthon portfolio projects">pyhthon portfolio projects</a></div></div>
+			<div class="card"> <div class="card_cont">Try this: <a class="button" target="blank" href="https://www.google.com/search?&q=pyhthon projects">pyhthon projects</a></div></div>
+			<div class="card"> <div class="card_cont">Try this: <a class="button" target="blank" href="https://www.google.com/search?&q=pyhthon projects github">pyhthon projects github</a></div></div>
+			<div class="card"> <div class="card_cont">Try this: <a class="button" target="blank" href="https://www.google.com/search?&q=pyhthon code projects">pyhthon code projects</a></div></div>
+			<div class="card"> <div class="card_cont">Try this: <a class="button" target="blank" href="https://www.google.com/search?&q=pyhthon project ideas github">pyhthon project ideas github</a></div></div>
+			<div class="card"> <div class="card_cont">Try this: <a class="button" target="blank" href="https://www.google.com/search?&q=pyhthon awesome projects list">pyhthon awesome projects list</a></div></div>
+			<div class="card"> <div class="card_cont">Try this: <a class="button" target="blank" href="https://www.google.com/search?&q=pyhthon awesome projects list github">pyhthon awesome projects list github</a></div></div>
+			<div class="card"> <div class="card_cont">Try this: <a class="button" target="blank" href="https://www.google.com/search?&q=pyhthon projects under 2 hours">pyhthon projects under 2 hours</a></div></div>
+			<div class="card"> <div class="card_cont">Try this: <a class="button" target="blank" href="https://www.google.com/search?&q=pyhthon projects under 15min">pyhthon projects under 15min</a></div></div>
+		</div>
+	</div>
+
+	<div class="innerdiv" id="a">
+		<h2>javascript </h2>
+		<div class="card_container">
+			<div class="card"> <div class="card_cont">Try this: <a class="button" target="blank" href="https://www.google.com/search?&q=javascript easy projects">javascript easy projects</a></div></div>
+			<div class="card"> <div class="card_cont">Try this: <a class="button" target="blank" href="https://www.google.com/search?&q=javascript quick projects">javascript quick projects</a></div></div>
+			<div class="card"> <div class="card_cont">Try this: <a class="button" target="blank" href="https://www.google.com/search?&q=javascript fast projects ">javascript fast projects </a></div></div>
+			<div class="card"> <div class="card_cont">Try this: <a class="button" target="blank" href="https://www.google.com/search?&q=javascript portfolio projects">javascript portfolio projects</a></div></div>
+			<div class="card"> <div class="card_cont">Try this: <a class="button" target="blank" href="https://www.google.com/search?&q=javascript projects">javascript projects</a></div></div>
+			<div class="card"> <div class="card_cont">Try this: <a class="button" target="blank" href="https://www.google.com/search?&q=javascript projects github">javascript projects github</a></div></div>
+			<div class="card"> <div class="card_cont">Try this: <a class="button" target="blank" href="https://www.google.com/search?&q=javascript code projects">javascript code projects</a></div></div>
+			<div class="card"> <div class="card_cont">Try this: <a class="button" target="blank" href="https://www.google.com/search?&q=javascript project ideas github">javascript project ideas github</a></div></div>
+			<div class="card"> <div class="card_cont">Try this: <a class="button" target="blank" href="https://www.google.com/search?&q=javascript awesome projects list">javascript awesome projects list</a></div></div>
+			<div class="card"> <div class="card_cont">Try this: <a class="button" target="blank" href="https://www.google.com/search?&q=javascript awesome projects list github">javascript awesome projects list github</a></div></div>
+			<div class="card"> <div class="card_cont">Try this: <a class="button" target="blank" href="https://www.google.com/search?&q=javascript projects under 2 hours">javascript projects under 2 hours</a></div></div>
+			<div class="card"> <div class="card_cont">Try this: <a class="button" target="blank" href="https://www.google.com/search?&q=javascript projects under 15min">javascript projects under 15min</a></div></div>
+		</div>
+	</div>
+
+	<div class="innerdiv" id="a">
+		<h2>java </h2>
+		<div class="card_container">
+			<div class="card"> <div class="card_cont">Try this: <a class="button" target="blank" href="https://www.google.com/search?&q=java easy projects">java easy projects</a></div></div>
+			<div class="card"> <div class="card_cont">Try this: <a class="button" target="blank" href="https://www.google.com/search?&q=java quick projects">java quick projects</a></div></div>
+			<div class="card"> <div class="card_cont">Try this: <a class="button" target="blank" href="https://www.google.com/search?&q=java fast projects ">java fast projects </a></div></div>
+			<div class="card"> <div class="card_cont">Try this: <a class="button" target="blank" href="https://www.google.com/search?&q=java portfolio projects">java portfolio projects</a></div></div>
+			<div class="card"> <div class="card_cont">Try this: <a class="button" target="blank" href="https://www.google.com/search?&q=java projects">java projects</a></div></div>
+			<div class="card"> <div class="card_cont">Try this: <a class="button" target="blank" href="https://www.google.com/search?&q=java projects github">java projects github</a></div></div>
+			<div class="card"> <div class="card_cont">Try this: <a class="button" target="blank" href="https://www.google.com/search?&q=java code projects">java code projects</a></div></div>
+			<div class="card"> <div class="card_cont">Try this: <a class="button" target="blank" href="https://www.google.com/search?&q=java project ideas github">java project ideas github</a></div></div>
+			<div class="card"> <div class="card_cont">Try this: <a class="button" target="blank" href="https://www.google.com/search?&q=java awesome projects list">java awesome projects list</a></div></div>
+			<div class="card"> <div class="card_cont">Try this: <a class="button" target="blank" href="https://www.google.com/search?&q=java awesome projects list github">java awesome projects list github</a></div></div>
+			<div class="card"> <div class="card_cont">Try this: <a class="button" target="blank" href="https://www.google.com/search?&q=java projects under 2 hours">java projects under 2 hours</a></div></div>
+			<div class="card"> <div class="card_cont">Try this: <a class="button" target="blank" href="https://www.google.com/search?&q=java projects under 15min">java projects under 15min</a></div></div>
+		</div>
+	</div>
+	
+	<div class="innerdiv" id="a">
+		<h2>c# </h2>
+		<div class="card_container">
+			<div class="card"> <div class="card_cont">Try this: <a class="button" target="blank" href="https://www.google.com/search?&q=c# easy projects">c# easy projects</a></div></div>
+			<div class="card"> <div class="card_cont">Try this: <a class="button" target="blank" href="https://www.google.com/search?&q=c# quick projects">c# quick projects</a></div></div>
+			<div class="card"> <div class="card_cont">Try this: <a class="button" target="blank" href="https://www.google.com/search?&q=c# fast projects ">c# fast projects </a></div></div>
+			<div class="card"> <div class="card_cont">Try this: <a class="button" target="blank" href="https://www.google.com/search?&q=c# portfolio projects">c# portfolio projects</a></div></div>
+			<div class="card"> <div class="card_cont">Try this: <a class="button" target="blank" href="https://www.google.com/search?&q=c# projects">c# projects</a></div></div>
+			<div class="card"> <div class="card_cont">Try this: <a class="button" target="blank" href="https://www.google.com/search?&q=c# projects github">c# projects github</a></div></div>
+			<div class="card"> <div class="card_cont">Try this: <a class="button" target="blank" href="https://www.google.com/search?&q=c# code projects">c# code projects</a></div></div>
+			<div class="card"> <div class="card_cont">Try this: <a class="button" target="blank" href="https://www.google.com/search?&q=c# project ideas github">c# project ideas github</a></div></div>
+			<div class="card"> <div class="card_cont">Try this: <a class="button" target="blank" href="https://www.google.com/search?&q=c# awesome projects list">c# awesome projects list</a></div></div>
+			<div class="card"> <div class="card_cont">Try this: <a class="button" target="blank" href="https://www.google.com/search?&q=c# awesome projects list github">c# awesome projects list github</a></div></div>
+			<div class="card"> <div class="card_cont">Try this: <a class="button" target="blank" href="https://www.google.com/search?&q=c# projects under 2 hours">c# projects under 2 hours</a></div></div>
+			<div class="card"> <div class="card_cont">Try this: <a class="button" target="blank" href="https://www.google.com/search?&q=c# projects under 15min">c# projects under 15min</a></div></div>
+
+		</div>
+	</div>
+	
+	<div class="innerdiv" id="a">
+		<h2>php </h2>
+		<div class="card_container">
+			<div class="card"> <div class="card_cont">Try this: <a class="button" target="blank" href="https://www.google.com/search?&q=php easy projects">php easy projects</a></div></div>
+			<div class="card"> <div class="card_cont">Try this: <a class="button" target="blank" href="https://www.google.com/search?&q=php quick projects">php quick projects</a></div></div>
+			<div class="card"> <div class="card_cont">Try this: <a class="button" target="blank" href="https://www.google.com/search?&q=php fast projects ">php fast projects </a></div></div>
+			<div class="card"> <div class="card_cont">Try this: <a class="button" target="blank" href="https://www.google.com/search?&q=php portfolio projects">php portfolio projects</a></div></div>
+			<div class="card"> <div class="card_cont">Try this: <a class="button" target="blank" href="https://www.google.com/search?&q=php projects">php projects</a></div></div>
+			<div class="card"> <div class="card_cont">Try this: <a class="button" target="blank" href="https://www.google.com/search?&q=php projects github">php projects github</a></div></div>
+			<div class="card"> <div class="card_cont">Try this: <a class="button" target="blank" href="https://www.google.com/search?&q=php code projects">php code projects</a></div></div>
+			<div class="card"> <div class="card_cont">Try this: <a class="button" target="blank" href="https://www.google.com/search?&q=php project ideas github">php project ideas github</a></div></div>
+			<div class="card"> <div class="card_cont">Try this: <a class="button" target="blank" href="https://www.google.com/search?&q=php awesome projects list">php awesome projects list</a></div></div>
+			<div class="card"> <div class="card_cont">Try this: <a class="button" target="blank" href="https://www.google.com/search?&q=php awesome projects list github">php awesome projects list github</a></div></div>
+			<div class="card"> <div class="card_cont">Try this: <a class="button" target="blank" href="https://www.google.com/search?&q=php projects under 2 hours">php projects under 2 hours</a></div></div>
+			<div class="card"> <div class="card_cont">Try this: <a class="button" target="blank" href="https://www.google.com/search?&q=php projects under 15min">php projects under 15min</a></div></div>
+
+		</div>
+	</div>
+	
+	<div class="innerdiv" id="a">
+		<h2>sql </h2>
+		<div class="card_container">
+			<div class="card"> <div class="card_cont">Try this: <a class="button" target="blank" href="https://www.google.com/search?&q=sql easy projects">sql easy projects</a></div></div>
+			<div class="card"> <div class="card_cont">Try this: <a class="button" target="blank" href="https://www.google.com/search?&q=sql quick projects">sql quick projects</a></div></div>
+			<div class="card"> <div class="card_cont">Try this: <a class="button" target="blank" href="https://www.google.com/search?&q=sql fast projects ">sql fast projects </a></div></div>
+			<div class="card"> <div class="card_cont">Try this: <a class="button" target="blank" href="https://www.google.com/search?&q=sql portfolio projects">sql portfolio projects</a></div></div>
+			<div class="card"> <div class="card_cont">Try this: <a class="button" target="blank" href="https://www.google.com/search?&q=sql projects">sql projects</a></div></div>
+			<div class="card"> <div class="card_cont">Try this: <a class="button" target="blank" href="https://www.google.com/search?&q=sql projects github">sql projects github</a></div></div>
+			<div class="card"> <div class="card_cont">Try this: <a class="button" target="blank" href="https://www.google.com/search?&q=sql code projects">sql code projects</a></div></div>
+			<div class="card"> <div class="card_cont">Try this: <a class="button" target="blank" href="https://www.google.com/search?&q=sql project ideas github">sql project ideas github</a></div></div>
+			<div class="card"> <div class="card_cont">Try this: <a class="button" target="blank" href="https://www.google.com/search?&q=sql awesome projects list">sql awesome projects list</a></div></div>
+			<div class="card"> <div class="card_cont">Try this: <a class="button" target="blank" href="https://www.google.com/search?&q=sql awesome projects list github">sql awesome projects list github</a></div></div>
+			<div class="card"> <div class="card_cont">Try this: <a class="button" target="blank" href="https://www.google.com/search?&q=sql projects under 2 hours">sql projects under 2 hours</a></div></div>
+			<div class="card"> <div class="card_cont">Try this: <a class="button" target="blank" href="https://www.google.com/search?&q=sql projects under 15min">sql projects under 15min</a></div></div>
+
+		</div>
+	</div>
+	
+	<div class="innerdiv" id="a">
+		<h2>empty </h2>
+		<div class="card_container">
+
+		</div>
+	</div>
+	
+	<div class="innerdiv" id="a">
+		<p>
+		Lorem ipsum dolor sit amet, mundi copiosae cu cum. Ut has quodsi legendos dissentiunt, nec atomorum antiopam signiferumque eu, ut sed brute omittantur persequeris. Id magna interpretaris eos, albucius copiosae conclusionemque pri te, animal vivendo volutpat ius ei. Dolorem apeirian vis ea.
+		</p>
+		
+		<p>
+		Lorem ipsum dolor sit amet, mundi copiosae cu cum. Ut has quodsi legendos dissentiunt, nec atomorum antiopam signiferumque eu, ut sed brute omittantur persequeris. Id magna interpretaris eos, albucius copiosae conclusionemque pri te, animal vivendo volutpat ius ei. Dolorem apeirian vis ea.
+		</p>
+
+	</div>
+	
+
+	</body>
+</html>

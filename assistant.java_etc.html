@@ -1,0 +1,295 @@
+<!doctype html>
+<html>
+	<head>
+	 <meta name="description" http-equiv="content-type" content="text/php; charset=utf-8" />
+	
+	<!--<title>my first html document</title>-->
+	<title>assistant.java_etc</title>
+	
+	
+	<link rel="icon" href="/favicon.png" sizes="16x16" type="image/png">
+	<style>
+		
+
+
+		body{
+			/*
+			height:100%;
+			width:100%;
+			*/
+			background-color: #f2f0f0ff;
+			font-family: arial;
+			font-size: 12pt;
+		}
+
+		p{			
+			text-align: justify;
+		}
+
+		.innerdiv{
+			position:relative;
+			top:15%;
+			width:60%;
+			margin-left:auto;
+			margin-right:auto;
+			height: auto;
+			background-color: #e3e3e3ff;
+			font-family: arial;
+			padding: 10pt;
+			margin-bottom: 15pt;
+
+		}
+		
+		.card_container{
+			display: grid;
+			/*						
+			grid-template-columns: 40px 50px auto 50px 40px;
+			grid-template-rows: 25% 100px auto;
+			grid-template-columns: 1fr 1fr;
+			grid-template-columns: repeat(4, 24%); 
+			The fr unit removes the need for math, when used with grid-gap: 10px; / fractional unit,
+			grid-template-columns: repeat(4, 1fr);
+			*/
+			grid-template-columns: repeat(8, 1fr);
+			grid-template-rows: repeat(2, auto);
+			justify-content: space-between;
+			align-content: space-evenly;
+			align-items: stretch;  /*height fill*/
+			row-gap: 5px;
+			grid-gap: 10px;
+			
+		}
+
+		@media (max-width: 1400px) {
+		/*small screen params*/
+		.card_container {
+			/*
+			grid-template-columns: repeat(12, 1fr);
+			*/
+			grid-template-columns: repeat(4, 1fr);
+		  }
+		}		
+
+		@media (max-width: 900px) {
+		/*small screen params*/
+		.card_container {
+			/*
+			grid-template-columns: repeat(12, 1fr);
+			*/
+			grid-template-columns: 1fr 1fr;
+		  }
+		}		
+		
+		@media (max-width: 500px) {
+		/*small screen params*/
+		.card_container {
+			/*
+			grid-template-columns: repeat(12, 1fr);
+			*/
+			grid-template-columns: 1fr;
+		  }
+		}
+		
+
+		
+		.card{
+			/*
+			text-aligh: justify-center;
+			text-align-last: center;
+			align-content:flex-start;
+			display: flex;
+			display: inline-block;
+			align-items:center;
+			 Your text needs some kind of container (div, span, p,...) 
+						*/
+			display:flex;
+			height: auto;
+			text-align:center;
+			align-items:center;
+			justify-content: center;
+			background-color: #ffbf2dff;
+			padding: 10pt;  
+		}
+		.button {
+			/*
+			font: bold 11px Arial;
+			border-top: 1px solid #CCCCCC;
+			border-right: 1px solid #333333;
+			border-bottom: 1px solid #333333;
+			border-left: 1px solid #CCCCCC;
+			background-color: #CCCCCC;
+			color: black;
+			padding: 2px 2px 2px 2px;
+			display: inline-block;
+			font-size: 12px;
+			*/
+			display: inline-flex;
+			font: Arial;
+			color: white;
+			background-color: #008CBA;
+			text-decoration: none;
+			padding: 3px;
+			margin-top: 10px;
+			border:none;
+			text-align: center;
+			height:3.5em;
+			align-items:center;
+			justify-content: center;
+			vertical-align: middle;
+			width: 100%
+		}	
+	</style>
+	</head>
+	<body>
+	
+	<div class="innerdiv" id="a">
+		<h1>assistant.java_etc</h1>
+		Last updated: 16:03 5/16/2019
+	</div>
+	
+	<div class="innerdiv" id="a">
+		<h2>java</h2>
+		<div class="card_container">
+			<div class="card"> <div class="card_cont">Try this: <a class="button" target="blank" href="https://www.google.com/search?&q=Java EE">Java EE</a></div></div>
+<div class="card"> <div class="card_cont">Try this: <a class="button" target="blank" href="https://www.google.com/search?&q=Java SE">Java SE</a></div></div>
+<div class="card"> <div class="card_cont">Try this: <a class="button" target="blank" href="https://www.google.com/search?&q=Sping ">Sping </a></div></div>
+<div class="card"> <div class="card_cont">Try this: <a class="button" target="blank" href="https://www.google.com/search?&q=spring Core">spring Core</a></div></div>
+<div class="card"> <div class="card_cont">Try this: <a class="button" target="blank" href="https://www.google.com/search?&q=spring mvc">spring mvc</a></div></div>
+<div class="card"> <div class="card_cont">Try this: <a class="button" target="blank" href="https://www.google.com/search?&q=spring cloud">spring cloud</a></div></div>
+<div class="card"> <div class="card_cont">Try this: <a class="button" target="blank" href="https://www.google.com/search?&q=spring security">spring security</a></div></div>
+<div class="card"> <div class="card_cont">Try this: <a class="button" target="blank" href="https://www.google.com/search?&q=spring jpa">spring jpa</a></div></div>
+<div class="card"> <div class="card_cont">Try this: <a class="button" target="blank" href="https://www.google.com/search?&q=spring integration">spring integration</a></div></div>
+<div class="card"> <div class="card_cont">Try this: <a class="button" target="blank" href="https://www.google.com/search?&q=spring boot">spring boot</a></div></div>
+
+		</div>
+	</div>
+	
+	<div class="innerdiv" id="a">
+		<h2>general: big data </h2>
+		<div class="card_container">
+			<div class="card"> <div class="card_cont">Try this: <a class="button" target="blank" href="https://www.google.com/search?&q=Spark">Spark</a></div></div>
+<div class="card"> <div class="card_cont">Try this: <a class="button" target="blank" href="https://www.google.com/search?&q=Spark batch">Spark batch</a></div></div>
+<div class="card"> <div class="card_cont">Try this: <a class="button" target="blank" href="https://www.google.com/search?&q=Spark “real-time”">Spark “real-time”</a></div></div>
+<div class="card"> <div class="card_cont">Try this: <a class="button" target="blank" href="https://www.google.com/search?&q=Spark sql">Spark sql</a></div></div>
+<div class="card"> <div class="card_cont">Try this: <a class="button" target="blank" href="https://www.google.com/search?&q=Hadoop">Hadoop</a></div></div>
+<div class="card"> <div class="card_cont">Try this: <a class="button" target="blank" href="https://www.google.com/search?&q=Hive">Hive</a></div></div>
+<div class="card"> <div class="card_cont">Try this: <a class="button" target="blank" href="https://www.google.com/search?&q=Kafka">Kafka</a></div></div>
+<div class="card"> <div class="card_cont">Try this: <a class="button" target="blank" href="https://www.google.com/search?&q=HDFS">HDFS</a></div></div>
+<div class="card"> <div class="card_cont">Try this: <a class="button" target="blank" href="https://www.google.com/search?&q=Map-Reduce">Map-Reduce</a></div></div>
+
+		</div>
+	</div>
+	
+	<div class="innerdiv" id="a">
+		<h2>more java</h2>
+		<div class="card_container">
+		<div class="card"> <div class="card_cont">Try this: <a class="button" target="blank" href="https://www.google.com/search?&q=Spring Framework">Spring Framework</a></div></div>
+<div class="card"> <div class="card_cont">Try this: <a class="button" target="blank" href="https://www.google.com/search?&q=Spring Integration">Spring Integration</a></div></div>
+<div class="card"> <div class="card_cont">Try this: <a class="button" target="blank" href="https://www.google.com/search?&q=Spring MVC">Spring MVC</a></div></div>
+<div class="card"> <div class="card_cont">Try this: <a class="button" target="blank" href="https://www.google.com/search?&q=AJAX">AJAX</a></div></div>
+<div class="card"> <div class="card_cont">Try this: <a class="button" target="blank" href="https://www.google.com/search?&q=JSTL">JSTL</a></div></div>
+<div class="card"> <div class="card_cont">Try this: <a class="button" target="blank" href="https://www.google.com/search?&q=Java Server Pages (JSP)">Java Server Pages (JSP)</a></div></div>
+<div class="card"> <div class="card_cont">Try this: <a class="button" target="blank" href="https://www.google.com/search?&q=log4j2">log4j2</a></div></div>
+
+		</div>
+	</div>
+
+	<div class="innerdiv" id="a">
+		<h2>random </h2>
+		<div class="card_container">
+			<div class="card"> <div class="card_cont">Try this: <a class="button" target="blank" href="https://www.google.com/search?&q=Apache Tomcat">Apache Tomcat</a></div></div>
+<div class="card"> <div class="card_cont">Try this: <a class="button" target="blank" href="https://www.google.com/search?&q=ATG Dynamo Application Server">ATG Dynamo Application Server</a></div></div>
+<div class="card"> <div class="card_cont">Try this: <a class="button" target="blank" href="https://www.google.com/search?&q=JBoss">JBoss</a></div></div>
+<div class="card"> <div class="card_cont">Try this: <a class="button" target="blank" href="https://www.google.com/search?&q=Oracle WebLogic Server">Oracle WebLogic Server</a></div></div>
+
+		</div>
+	</div>
+
+	<div class="innerdiv" id="a">
+		<h2>build tools </h2>
+		<div class="card_container">
+			<div class="card"> <div class="card_cont">Try this: <a class="button" target="blank" href="https://www.google.com/search?&q=Ant">Ant</a></div></div>
+<div class="card"> <div class="card_cont">Try this: <a class="button" target="blank" href="https://www.google.com/search?&q=Gradle">Gradle</a></div></div>
+<div class="card"> <div class="card_cont">Try this: <a class="button" target="blank" href="https://www.google.com/search?&q=Maven">Maven</a></div></div>
+<div class="card"> <div class="card_cont">Try this: <a class="button" target="blank" href="https://www.google.com/search?&q=Sbt">Sbt</a></div></div>
+<div class="card"> <div class="card_cont">Try this: <a class="button" target="blank" href="https://www.google.com/search?&q=Intellij IDEA">Intellij IDEA</a></div></div>
+<div class="card"> <div class="card_cont">Try this: <a class="button" target="blank" href="https://www.google.com/search?&q=Sublime Text">Sublime Text</a></div></div>
+<div class="card"> <div class="card_cont">Try this: <a class="button" target="blank" href="https://www.google.com/search?&q=Git">Git</a></div></div>
+<div class="card"> <div class="card_cont">Try this: <a class="button" target="blank" href="https://www.google.com/search?&q=Maven">Maven</a></div></div>
+<div class="card"> <div class="card_cont">Try this: <a class="button" target="blank" href="https://www.google.com/search?&q=Jira">Jira</a></div></div>
+<div class="card"> <div class="card_cont">Try this: <a class="button" target="blank" href="https://www.google.com/search?&q=Git">Git</a></div></div>
+<div class="card"> <div class="card_cont">Try this: <a class="button" target="blank" href="https://www.google.com/search?&q=Subversion">Subversion</a></div></div>
+<div class="card"> <div class="card_cont">Try this: <a class="button" target="blank" href="https://www.google.com/search?&q=Eclipse">Eclipse</a></div></div>
+
+		</div>
+	</div>
+	
+	<div class="innerdiv" id="a">
+		<h2>more cloud </h2>
+		<div class="card_container">
+			<div class="card"> <div class="card_cont">Try this: <a class="button" target="blank" href="https://www.google.com/search?&q=AWS EC2">AWS EC2</a></div></div>
+<div class="card"> <div class="card_cont">Try this: <a class="button" target="blank" href="https://www.google.com/search?&q=AWS S3">AWS S3</a></div></div>
+<div class="card"> <div class="card_cont">Try this: <a class="button" target="blank" href="https://www.google.com/search?&q=AWS ECS">AWS ECS</a></div></div>
+<div class="card"> <div class="card_cont">Try this: <a class="button" target="blank" href="https://www.google.com/search?&q=AWS RDS">AWS RDS</a></div></div>
+<div class="card"> <div class="card_cont">Try this: <a class="button" target="blank" href="https://www.google.com/search?&q=AWS Lambda">AWS Lambda</a></div></div>
+<div class="card"> <div class="card_cont">Try this: <a class="button" target="blank" href="https://www.google.com/search?&q=Apache Spark">Apache Spark</a></div></div>
+<div class="card"> <div class="card_cont">Try this: <a class="button" target="blank" href="https://www.google.com/search?&q=Apache Hive">Apache Hive</a></div></div>
+<div class="card"> <div class="card_cont">Try this: <a class="button" target="blank" href="https://www.google.com/search?&q=Cloudera Hadoop">Cloudera Hadoop</a></div></div>
+<div class="card"> <div class="card_cont">Try this: <a class="button" target="blank" href="https://www.google.com/search?&q=Apache Kafka">Apache Kafka</a></div></div>
+
+		</div>
+	</div>
+	
+	<div class="innerdiv" id="a">
+		<h2>ci/cd </h2>
+		<div class="card_container">
+			<div class="card"> <div class="card_cont">Try this: <a class="button" target="blank" href="https://www.google.com/search?&q=Luigi">Luigi</a></div></div>
+<div class="card"> <div class="card_cont">Try this: <a class="button" target="blank" href="https://www.google.com/search?&q=Jenkins">Jenkins</a></div></div>
+<div class="card"> <div class="card_cont">Try this: <a class="button" target="blank" href="https://www.google.com/search?&q=Bitbucket Pipelines and Deployments">Bitbucket Pipelines and Deployments</a></div></div>
+
+		</div>
+	</div>
+	
+	<div class="innerdiv" id="a">
+		<h2>messaging </h2>
+		<div class="card_container">
+			<div class="card"> <div class="card_cont">Try this: <a class="button" target="blank" href="https://www.google.com/search?&q=WSMB">WSMB</a></div></div>
+<div class="card"> <div class="card_cont">Try this: <a class="button" target="blank" href="https://www.google.com/search?&q=MQ">MQ</a></div></div>
+<div class="card"> <div class="card_cont">Try this: <a class="button" target="blank" href="https://www.google.com/search?&q=JMS">JMS</a></div></div>
+<div class="card"> <div class="card_cont">Try this: <a class="button" target="blank" href="https://www.google.com/search?&q=RabbitMQ">RabbitMQ</a></div></div>
+<div class="card"> <div class="card_cont">Try this: <a class="button" target="blank" href="https://www.google.com/search?&q=ActiveMQ">ActiveMQ</a></div></div>
+
+		</div>
+	</div>
+	
+	<div class="innerdiv" id="a">
+		<h2>random </h2>
+		<div class="card_container">
+			<div class="card"> <div class="card_cont">Try this: <a class="button" target="blank" href="https://www.google.com/search?&q=Openshift">Openshift</a></div></div>
+<div class="card"> <div class="card_cont">Try this: <a class="button" target="blank" href="https://www.google.com/search?&q=Apache Camel">Apache Camel</a></div></div>
+<div class="card"> <div class="card_cont">Try this: <a class="button" target="blank" href="https://www.google.com/search?&q=CXF">CXF</a></div></div>
+<div class="card"> <div class="card_cont">Try this: <a class="button" target="blank" href="https://www.google.com/search?&q=Red Hat Jboss Fuse">Red Hat Jboss Fuse</a></div></div>
+<div class="card"> <div class="card_cont">Try this: <a class="button" target="blank" href="https://www.google.com/search?&q=SoapUI">SoapUI</a></div></div>
+<div class="card"> <div class="card_cont">Try this: <a class="button" target="blank" href="https://www.google.com/search?&q=Spring Boot">Spring Boot</a></div></div>
+<div class="card"> <div class="card_cont">Try this: <a class="button" target="blank" href="https://www.google.com/search?&q=Spring Integration">Spring Integration</a></div></div>
+<div class="card"> <div class="card_cont">Try this: <a class="button" target="blank" href="https://www.google.com/search?&q=Karma">Karma</a></div></div>
+<div class="card"> <div class="card_cont">Try this: <a class="button" target="blank" href="https://www.google.com/search?&q=Protractor">Protractor</a></div></div>
+<div class="card"> <div class="card_cont">Try this: <a class="button" target="blank" href="https://www.google.com/search?&q=Jasmine ">Jasmine </a></div></div>
+
+		</div>
+	</div>
+	
+	<div class="innerdiv" id="a">
+		<p>
+		Lorem ipsum dolor sit amet, mundi copiosae cu cum. Ut has quodsi legendos dissentiunt, nec atomorum antiopam signiferumque eu, ut sed brute omittantur persequeris. Id magna interpretaris eos, albucius copiosae conclusionemque pri te, animal vivendo volutpat ius ei. Dolorem apeirian vis ea.
+		</p>
+		
+		<p>
+		Lorem ipsum dolor sit amet, mundi copiosae cu cum. Ut has quodsi legendos dissentiunt, nec atomorum antiopam signiferumque eu, ut sed brute omittantur persequeris. Id magna interpretaris eos, albucius copiosae conclusionemque pri te, animal vivendo volutpat ius ei. Dolorem apeirian vis ea.
+		</p>
+
+	</div>
+	
+
+	</body>
+</html>
